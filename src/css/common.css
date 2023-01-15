@@ -10,9 +10,41 @@ body {
   background-color: #fafafa;
   color: #212121;
   line-height: 1.5;
+  text-align: center;
 }
 
 img {
   display: block;
   max-width: 100%;
+}
+
+button {
+  background-color: rgb(91, 196, 125);
+  border-radius: 4px;
+}
+
+.timer {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  font-weight: 100;
+  text-align: center;
+  font-size: 30px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column-reverse;
+  margin-right: 50px;
+  padding: 10px;
+
+  border: solid 1px;
+  border-radius: 4px;
+  background-color: rgb(241, 235, 235);
+}
+
+.label {
+  font-size: 14px;
+  background-color: rgb(175, 171, 171);
+  border-radius: 4px;
 }

@@ -12,13 +12,19 @@ function color() {
 
 startBtn.addEventListener("click", () => {
     timerId = setInterval(color, 1000);
-    startBtn.disabled = true;
-    stopBtn.disabled = false;
+    buttonActive(startBtn, stopBtn, true);
+    // startBtn.disabled = true;
+    // stopBtn.disabled = false;
 })
 
 stopBtn.addEventListener("click", () => {
     clearInterval(timerId);
-    stopBtn.disabled = true;
-    startBtn.disabled = false;
+     buttonActive(startBtn, stopBtn, false);
+    // stopBtn.disabled = true;
+    // startBtn.disabled = false;
 })
   
+function buttonActive(startBtn, stopBtn, status) {
+    startBtn.disabled = status;
+    stopBtn.disabled = !status;
+}

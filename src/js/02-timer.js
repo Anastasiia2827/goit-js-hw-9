@@ -13,7 +13,7 @@ const options = {
   minuteIncrement: 1,
   // зробити деструктуризацію selectedDates done
   onClose([selectedDates]) {      
-    inputDate = selectedDates.getTime();
+   const inputDate = selectedDates.getTime();
        if (inputDate <= Date.now()) {
   Notify.failure("Please choose a date in the future")
  }
